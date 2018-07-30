@@ -37,15 +37,36 @@ function distance({lat:lat1, long:long1}, {lat:lat2, long:long2}) {
 // console.log(places);
 
 
+// var currentLocation = navigator.geolocation.getCurrentPosition(
+//     displayPosition, 
+// );
+
+// function displayPosition(position) {
+//     current = {lat:position.coords.latitude ,long:position.coords.longitude};
+// }
+
+// setTimeout(() => {
+//     results.forEach(function(place){
+//         var result = distance(current,place.location);
+//         var distanceMeter = (result * 1000).toFixed(2)+ "m";
+//         if (result > furtherest){
+//             places.push(place.name + ": " + distanceMeter);
+//             furtherest=result;
+//         } else {
+//             places.unshift(place.name + ": " + distanceMeter);
+//         }    
+//     });
+//     console.log(places)
+    
+// }, 5000);
+
+
 var currentLocation = navigator.geolocation.getCurrentPosition(
     displayPosition, 
 );
 
 function displayPosition(position) {
     current = {lat:position.coords.latitude ,long:position.coords.longitude};
-}
-
-setTimeout(() => {
     results.forEach(function(place){
         var result = distance(current,place.location);
         var distanceMeter = (result * 1000).toFixed(2)+ "m";
@@ -57,6 +78,4 @@ setTimeout(() => {
         }    
     });
     console.log(places)
-    
-}, 5000);
-
+}
