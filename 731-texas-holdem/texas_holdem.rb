@@ -124,3 +124,4 @@ end
 
 winner[:name ]= players[winner[:index]].slice(0..-7)
 p winner
+p values
