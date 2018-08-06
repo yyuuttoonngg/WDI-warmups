@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(22, 22, 52);
+}
+
+div {
+    width:250px;
+    height:30px;
+}
+.accordin{
+    background-color: #fff;
+    border: 0.05px solid rgb(87, 84, 84);
+}
+.fas{
+    padding:0 10px;
+}
+.fa-angle-down{
+   float: right;
+}
+.panels{
+    display: none;
+}
+.lan{
+    margin: 0;
+    border: 0.05px solid rgb(87, 84, 84);
+    color:white;
+    background-color: rgb(68, 68, 97);
+    padding-left: 45px;
+    height:30px;
+}
+.display{
+    display: block;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition-duration: 0.1s;
+}
+.red{
+    color:red;
+}
+.redbg{
+    background-color: red;
+}
