@@ -1,0 +1,6 @@
+<h1>The pokedex!!</h1>
+<% @pokemons.each do |pokemon| %>
+    <div>
+        <a href="pokemons/<%= pokemon.id %>"><%= pokemon.species %> </a>
+    </div>
+<% end %>
