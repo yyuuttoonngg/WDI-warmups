@@ -8,11 +8,13 @@ function nWayIntersection(arr){
     var intersections =[];
     for (var i =0; i<arr.length; i++){
         for(var j=0; j<arr[i].length; j++){
-            if (numbers.indexOf(arr[i][j])===-1){
-                numbers.push(arr[i][j]);
-                times.push(1);
-            } else if(arr[i].indexOf(arr[i][j],j+1)===-1){
-                times[numbers.indexOf(arr[i][j])] += 1;
+            if (arr[i].indexOf(arr[i][j],j+1)===-1){
+                if (numbers.indexOf(arr[i][j])===-1){
+                    numbers.push(arr[i][j]);
+                    times.push(1);
+                } else {
+                    times[numbers.indexOf(arr[i][j])] += 1;
+                }
             }
         }
     }
