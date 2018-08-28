@@ -21,5 +21,5 @@ function encrypt(text, n) {
     return encrypt(encryptedText, n + 2);
   }
 
-  console.log(encrypt("This is a Te", 4))
-  console.log(decrypt('iiaeh  TTss ',4))
+  console.log(encrypt("0123456789", 10))
+  

@@ -34,5 +34,5 @@ function decrypt(encryptedText,n){
 }
 console.log(decrypt('s eT ashi tist!',2))
 
-console.log(encrypt("This is a Te", 4))
+console.log(encrypt("This is a", 4))
 console.log(decrypt('iiaeh  TTss ',4))
