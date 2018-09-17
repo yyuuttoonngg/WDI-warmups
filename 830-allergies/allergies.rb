@@ -1,4 +1,3 @@
-
 class Allergies
     def initialize score
         @allergens = ['eggs','peanuts','shellfish','strawberries','tomatoes','chocolate','pollen', 'cats']
@@ -18,10 +17,8 @@ class Allergies
             return get_index score
         else
             return @index
-    
         end
         @index.sort!
-    
     end
 
 
