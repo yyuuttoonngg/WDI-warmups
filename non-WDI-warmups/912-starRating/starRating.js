@@ -12,7 +12,7 @@ function starRating(str){
   if (Number(str)%1 >0){
     rating[fullstars] = 'half';
   }
-  return rating;
+  return rating.join(" ");
 }
 console.log(starRating('2.87'));
 console.log(starRating('0.38'));
